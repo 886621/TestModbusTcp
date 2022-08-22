@@ -29,7 +29,9 @@ $(info OBJS= $(OBJS))
 modtcp_test: $(OBJS)
 	@echo "55555 xxxxx"
 	$(CC)   $(OBJS)  -o modtcp_test -ldl -rdynamic
-	-cp modtcp_test  /mnt/hgfs/app/Tcu_lib/modtcp_test;
+#编译完成后的拷贝的路径：
+#-cp modtcp_test  /mnt/hgfs/app/Tcu_lib/modtcp_test;
+	-cp modtcp_test /mnt/hgfs/share_E/zgEMU/Program/modtcp_test;
 	-@echo ' '
 #-------------------------------------------------------------------
 
